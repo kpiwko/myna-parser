@@ -1064,7 +1064,7 @@ export namespace Myna
     // flag set explicitly. 
     export function tokenize(r:Rule, s:string) : AstNode[]
     {
-        const result = this.parse(r.ast.zeroOrMore, s);
+        const result = parse(r.ast.zeroOrMore, s);
         return result ? result.children : [];
     }
 
